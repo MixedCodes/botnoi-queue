@@ -1,8 +1,6 @@
 const currentQueue = document.getElementById("current-queue");
 const currentName = document.getElementById("current-name");
-
 let name = document.getElementById("name")
-
 const getFrontUrl = "https://script.google.com/macros/s/AKfycbxTF6ZgyNTPwlZplPMRS0TBCOQsJPGt3dJuP4nsy7YNyAjCh6V4qdDRC8u3g-s9j4ME/exec";
 const pushBackUrl = "https://script.google.com/macros/s/AKfycbxp_HgiAezssFr79vq84-Vl-YkGiEMCnYuvlZQ8eRY-BPe73_dDZTMeWhrW_UBryGpE/exec?name=";
 const postConfig = {
@@ -22,8 +20,6 @@ const postConfig = {
 // 	});
 
 // console.log(fetchedQueue);
-
-getData();
 
 
 async function getData() {
