@@ -21,6 +21,7 @@ const postConfig = {
 
 // console.log(fetchedQueue);
 
+getData();
 
 async function getData() {
 	const response = await fetch(getFrontUrl);
@@ -30,6 +31,8 @@ async function getData() {
 	currentQueue.textContent = queueNumber;
 	currentName.textContent += customerName;
 }
+
+
 
 async function pushBack() {
 	const response = await fetch(pushBackUrl + name.value)
