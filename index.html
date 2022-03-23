@@ -9,7 +9,7 @@
 </head>
 <body>
 	<nav>
-		<img src="logo.png" alt="" style="width:4em;height:4em;">
+		<img src="logo.png" alt="" style="width:4em;height:4em;" onclick="getFront()">
 	</nav>
 	<header>
 		<h1 class="th">จองคิว</h1>
@@ -21,24 +21,25 @@
 			<p class="eng">Current queue:</p>	
 			<p id="current-queue"> </p>
 			<p id="current-name">คุณ </p>
-			<p class="eng">Queues in line: </p>
+			<!-- <p class="th">จำนวนคนต่อคิว</p> -->
+			<p id="current-number" class="eng">จำนวนรอต่อคิว (Queues in line): </p>
 		</section>
 		<br>
 		<section>
 			<section id="line">
 				<p>จองคิวผ่านไลน์ได้ที่</p>
 				<p class="eng">Queue with line:</p>
-				<img id="qr" src="qr.png" alt="" style="width:20em;height:20em;">
+				<img id="qr" src="qr.png" alt="" style="width:17.5em;height:17.5m;">
 				<p class="tips">*ท่านจะได้รับการแจ้งเตือนผ่านไลน์เมื่อใกล้ถึงคิวของท่าน</p>
 				<p class="eng tips">You will be notified through Line shortly before your queue.</p>
-				<br>
+				<br><hr><br>
 				<p>หรือจองได้โดยใช้ชื่อด้านล่าง</p>
 				<p class="eng">Alternatively, you can queue with your name below.</p>
 			<section>
 			<form action="">
 				<label for="name">ชื่อ (Preferred Name):</label>
 				<input id="name" class="name" type="text" placeholder="กรอกชื่อที่นี่ (Type here)" name="name" required>
-				<button id="submit" onclick="pushBack()">Submit</button>
+				<button id="submit" onclick="confirmation()">Submit</button>
 			</form>
 	</section>
 	</main>

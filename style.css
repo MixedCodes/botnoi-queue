@@ -43,6 +43,9 @@ p {
 	font-size: 2rem;
 }
 
+hr {
+	border-color: #BBC5D1;
+}
 
 #queue-display {
 	color: #445565;
@@ -63,14 +66,14 @@ p {
 #current-queue {
 	color: #445565;
 	/*color: #E0CDA2;*/
-	font-size: 6rem;
+	font-size: 5.75rem;
 	/*border-radius: 10px;*/
 	/*background-color: #445565;*/
 	margin-bottom: -3rem;
 }
 
 #current-name {
-
+	/*font-size: 2.25rem;*/
 }
 
 #line {
@@ -83,7 +86,7 @@ p {
 }
 
 #name {
-	font-size: 1rem;
+	font-size: .75rem;
 	color: #445565;
 	border: 1px solid #445565;
 	border-radius: 3px;
@@ -108,11 +111,11 @@ p {
 }
 
 .tips {
-	font-size: 1rem;
+	font-size: .75rem;
 }
 
 .eng:not(.tips)  {
-	font-size: 1.25rem;
+	font-size: 1rem;
 }
 
 .th {
