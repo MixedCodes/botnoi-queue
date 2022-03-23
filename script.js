@@ -23,6 +23,7 @@ const postConfig = {
 // console.log(fetchedQueue);
 
 getFront();
+setInterval(getFront, 1000);
 
 function confirmation() {
 	if (name.value != "") {
