@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;700&display=swap" rel="stylesheet">
 	<title>Queue</title>
 </head>
 <body>
@@ -11,27 +12,33 @@
 		<img src="logo.png" alt="" style="width:4em;height:4em;">
 	</nav>
 	<header>
-		<h1>จองคิว</h1>
+		<h1 class="th">จองคิว</h1>
 		<h2>Queue</h2>
 	</header>
 	<main>
 		<section id="queue-display">
-			<p>Current queue:</p>
+			<p class="th">คิวปัจจุบัน</p>
+			<p class="eng">Current queue:</p>	
 			<p id="current-queue"> </p>
 			<p id="current-name"> </p>
-			<p>Queue in line: </p>
+			<p class="eng">Queues in line: </p>
 		</section>
 		<br>
 		<section>
-			<p>Queue at:</p>
-			<p>QR placeholder</p>
-			<p>You will be notified shortly before your queue.</p>
-			<br>
-			<p>Alternatively, you can manually queue with your name.</p>
+			<section id="line">
+				<p>จองคิวผ่านไลน์ได้ที่</p>
+				<p class="eng">Queue with line:</p>
+				<p>QR placeholder</p>
+				<p class="tips">*ท่านจะได้รับการแจ้งเตือนผ่านไลน์เมื่อใกล้ถึงคิวของท่าน</p>
+				<p class="eng tips">You will be notified through Line shortly before your queue.</p>
+				<br>
+				<p>หรือจองได้โดยใช้ชื่อด้านล่าง</p>
+				<p class="eng">Alternatively, you can queue with your name below.</p>
+			<section>
 			<form action="">
-				<label for="name">Preferred Name:</label>
-				<input id="name" type="text" name="name">
-				<button>Submit</button>
+				<label for="name">ชื่อ (Preferred Name):</label>
+				<input id="name" type="text" placeholder="กรอกชื่อที่นี่ (Type here)" name="name">
+				<button id="submit">Submit</button>
 			</form>
 	</section>
 	</main>

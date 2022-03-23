@@ -1,6 +1,13 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');*/
+
 * {
 	margin: .3rem 0;
-	color: #445565;
+	font-family: Kanit;
+	
+}
+
+body {
+	color: #607590;
 }
 
 nav {
@@ -36,11 +43,15 @@ p {
 	font-size: 2rem;
 }
 
+
 #queue-display {
+	color: #445565;
 	text-align: center;
 	padding: 2rem 5rem;
 	/*border: .5px solid #BBC5D1;*/
 	box-shadow: 0px 2px 3px #BBC5D1;
+	/*background-color: #445565;
+	color: #FFFFFF;*/
 	border-top: 0;
 	border-radius: 10px;
 	display: flex;
@@ -51,7 +62,50 @@ p {
 
 #current-queue {
 	color: #445565;
+	/*color: #E0CDA2;*/
 	font-size: 6rem;
 	/*border-radius: 10px;*/
 	/*background-color: #445565;*/
+}
+
+#line {
+
+}
+
+#name {
+	font-size: 1rem;
+	color: #445565;
+	border: 1px solid #445565;
+	border-radius: 3px;
+}
+
+#submit {
+	background-color: #607590;
+	padding: 5px 1rem;
+	border: 0;
+	border-radius: 15px;
+	cursor: pointer;
+	color: #FFFFFF;
+}
+
+#name::placeholder {
+	color: #445565;
+	opacity: 0.5;
+}
+
+#submit:hover {
+	background-color: #445565;
+}
+
+.tips {
+	font-size: 1rem;
+}
+
+.eng:not(.tips)  {
+	font-size: 1.25rem;
+}
+
+.th {
+	margin-bottom: -1rem;
+	/*gap: 0;*/
 }
