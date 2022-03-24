@@ -1,0 +1,117 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');*/
+
+* {
+	margin: .3rem 0;
+	font-family: Kanit;
+}
+
+body {
+	color: #607590;
+}
+
+nav {
+	margin-left: 3rem;
+}
+
+header {
+	/*text-align: center;*/
+	
+	color: #445565;
+	background-color: #BBC5D1;
+	padding: 1rem 3rem;
+}
+
+main {
+	/*background: brown;*/
+	padding: 2rem;
+	display: flex;
+	flex-flow: row wrap;
+	/*justify-content: center;*/
+	gap: 4rem;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 { 
+	font-size: 2.5rem;
+}
+
+p {
+	font-size: 2rem;
+}
+
+hr {
+	border-color: #BBC5D1;
+}
+
+#queue-display {
+	color: #445565;
+	text-align: left;
+	padding: 6rem 46%;
+	/*border: .5px solid #BBC5D1;*/
+	box-shadow: 0px 2px 3px #BBC5D1;
+	/*background-color: #445565;
+	color: #FFFFFF;*/
+	border-top: 0;
+	border-radius: 10px;
+	flex-flow: column wrap;
+	gap: 1rem; 
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td {
+	text-align: left;
+	padding: 8px;
+}
+  
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+#current-queue {
+	color: #445565;
+	/*color: #E0CDA2;*/
+	font-size: 5.75rem;
+	/*border-radius: 10px;*/
+	/*background-color: #445565;*/
+	margin-bottom: -3rem;
+}
+
+.tips {
+	font-size: .75rem;
+}
+
+.eng:not(.tips)  {
+	font-size: 1rem;
+}
+
+.th {
+	margin-bottom: -1rem;
+	/*gap: 0;*/
+}
+
+#submit {
+	background-color: #607590;
+	padding: 5px 1rem;
+	border: 0;
+	border-radius: 15px;
+	cursor: pointer;
+	color: #FFFFFF;
+}
+
+#submit:hover {
+	background-color: #445565;
+}
+
+.one{
+	width: 40%;
+}
+
+.alnright { 
+	text-align: right; 
+	margin-right: 3em;
+}

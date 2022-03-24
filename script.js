@@ -40,7 +40,7 @@ function confirmation() {
 async function getFront() {
 	const response = await fetch(getFrontUrl);
 	const data = await response.json();
-	const queueNumber = data.queueNumber;
+	const queueNumber = "A"+data.queueNumber;
 	const customerName = data.customerName;
 	const waiting = data.waiting - 1;
 	currentQueue.textContent = queueNumber;
