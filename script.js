@@ -49,6 +49,6 @@ async function getFront() {
 }
 
 async function pushBack() {
-	const response = await fetch(`${pushBackUrl}${name.value}`);
+	const response = await fetch(`${pushBackUrl}${name.value}&userId=-`);
 }
 
