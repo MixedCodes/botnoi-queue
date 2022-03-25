@@ -22,9 +22,9 @@ const refresh = async () => {
 
 const del = async (queueNumber) => {
 	const url = deleteQ+queueNumber;
+	document.getElementById(`A${queueNumber}`).style.display = "none";
 	fetch(url)
 	.then(res=>{
-		document.getElementById(`A${queueNumber}`).style.display = "none";
 		if(res.ok){ 
 			console.log(res.body);
 		}
