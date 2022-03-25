@@ -24,12 +24,15 @@ const del = async (queueNumber) => {
 	const url = deleteQ+queueNumber;
 	fetch(url)
 	.then(res=>{
+		document.getElementById(`A${queueNumber}`).style.display = "none";
 		if(res.ok){ 
 			console.log(res.body);
-			document.getElementById(`A${queueNumber}`).style.display = "none";
 		}
 	}).catch(err=>console.log(err));
 }	
 
+const notify = async (userID) => {
+	
+}
 
 refresh();
