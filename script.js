@@ -2,6 +2,7 @@ const currentQueue = document.getElementById("current-queue");
 const currentName = document.getElementById("current-name");
 const currentNumber = document.getElementById("current-number");
 const name = document.getElementById("name");
+var lastReservation = 0;
 const getFrontUrl = "https://script.google.com/macros/s/AKfycbxTF6ZgyNTPwlZplPMRS0TBCOQsJPGt3dJuP4nsy7YNyAjCh6V4qdDRC8u3g-s9j4ME/exec";
 const pushBackUrl = "https://script.google.com/macros/s/AKfycbxp_HgiAezssFr79vq84-Vl-YkGiEMCnYuvlZQ8eRY-BPe73_dDZTMeWhrW_UBryGpE/exec?name=";
 const postConfig = {
@@ -25,15 +26,17 @@ const postConfig = {
 getFront();
 setInterval(getFront, 1000);
 
-function confirmation() {
+async function confirmation() {
 	if (name.value != "") {
 		if (confirm("ท่านแน่ใจหรือไม่ว่าจะจองคิว Are you sure you would like to queue for the restaurant?")) {
-			pushBack();
+			await pushBack();
 			name.value = "";
-			alert("ขอบคุณที่จองคิวค่ะ Thank you so much for queueing up!");
-		} else {
-			return false;
-		}
+			await console.log("on main\n");
+			await console.log(lastReservation);
+			await alert(`ขอบคุณที่จองคิวค่ะ คิวของคุณคือ A${lastReservation} \n\nThank you so much for queueing up! \nYour Queue is A${lastReservation}`);
+		} 
+		else return false;
+		
 	}
 }
 
@@ -50,5 +53,8 @@ async function getFront() {
 
 async function pushBack() {
 	const response = await fetch(`${pushBackUrl}${name.value}&userID=0`);
+	const data = await response.json();
+	lastReservation = data.queue;
+	console.log(lastReservation);
 }
 
